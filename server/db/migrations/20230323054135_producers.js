@@ -4,10 +4,10 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable('producers', (table) => {
-    table.integer('producer_id').primary()
-    table.string('producer_name')
-    table.string('email_contact')
-    table.string('producer_description')
+    table.increments('id').primary()
+    table.string('name')
+    table.string('email')
+    table.string('description')
   })
 }
 
