@@ -5,12 +5,13 @@
 exports.up = function (knex) {
   return knex.schema.createTable('shows', (table) => {
     table.increments('id').primary()
-
     table.string('name')
     table.string('host')
     table.string('genre')
     table.string('description')
     table.string('tracklist')
+    table.string('audio_length')
+    table.string('img')
     table.string('resource')
   })
 }
