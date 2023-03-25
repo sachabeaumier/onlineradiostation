@@ -28,7 +28,8 @@ server.get('/testingapiroute', (req, res) => {
 
 // server.get('/', (req, res) => {})
 
-server.use('/shows', shows)
+server.use('/showsapi', shows)
+// server.use('/', placeholder)
 server.use('*', placeholder)
 
 export default server

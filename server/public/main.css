@@ -1,0 +1,14 @@
+body {
+  background-color: #c5d1e1;
+  font-family: 'Roboto'
+}
+
+p {
+  font-family: Helvetica;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
